@@ -18,14 +18,14 @@ function Drawer({ handleDismiss, children }) {
             src={LoopstudiosLogo}
             alt="Loopstudios logo"
           />
-          <button className={styles.closeBtn}>
+          {/* <button className={styles.closeBtn}>
             <img
               src={closeBtn}
               alt="Close Menu Button"
               aria-hidden="true"
               onClick={handleDismiss}
             />
-          </button>
+          </button> */}
         </div>
         <div className={styles.children}>{children}</div>
       </div>

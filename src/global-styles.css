@@ -68,7 +68,13 @@ html {
   --color-secondary-background: black;
 
   --color-primary-button: black;
-}
 
-/* body {
-} */
+  --ham-bar-width: 1.5rem;
+  --ham-bar-height: 0.125rem;
+  --ham-bar-gap: 0.3125rem;
+  --ham-height: calc(var(--ham-bar-height) * 3 + var(--ham-bar-gap) * 2);
+
+  --x-width: calc(var(--ham-height) * 1.41421356237);
+
+  --animation-timing: 200ms ease-in-out;
+}

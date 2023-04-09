@@ -30,27 +30,35 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.navigationBar}>
-        <img src={LoopstudiosLogo} alt="Loopstudios logo" />
-        <nav role="navigation" aria-label="Main menu" className={styles.right}>
-          <button
-            aria-expanded={isMenuOpen}
-            className={styles.hamburgerBtn}
-            onClick={toggleIsMenuOpen}
-          >
-            <img src={Hamburger} alt="Hamburger Menu Button" />
-          </button>
-          {isMobile ? (
+        <img
+          src={LoopstudiosLogo}
+          alt="Loopstudios logo"
+          className={styles.logo}
+        />
+        <div className={styles.right}>
+          <label className={styles.hamburgerMenu}>
+            <input type="checkbox" onChange={toggleIsMenuOpen} />
+          </label>
+          {/* {isMobile ? (
             <>
               {isMenuOpen && (
-                <Drawer handleDismiss={toggleIsMenuOpen}>
+                <Drawer
+                  className={styles.drawer}
+                  handleDismiss={toggleIsMenuOpen}
+                >
                   <NavigationList />
                 </Drawer>
               )}
             </>
           ) : (
             <NavigationList />
-          )}
-        </nav>
+          )} */}
+          <aside className={styles.sidebar}>
+            <nav className={styles.navList}>
+              <NavigationList />
+            </nav>
+          </aside>
+        </div>
       </div>
       <div className={styles.headingBox}>
         <h1 className={styles.heading}>Immersive Experiences That Deliver</h1>
