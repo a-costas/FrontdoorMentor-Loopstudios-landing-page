@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  z-index: -1;
+}
+
+.filter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.title {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  position: absolute;
+  color: var(--color-primary-font);
+  bottom: 1.25rem;
+  left: 1.25rem;
+  text-transform: uppercase;
+  width: 40%;
+}

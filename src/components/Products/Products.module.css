@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.ourCreations {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--color-secondary-font);
+  text-transform: uppercase;
+}
+
+button {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  background-color: var(--color-primary-background);
+  color: var(--color-secondary-font);
+  padding: 0.8125rem 2.6875rem 0.8125rem 2.375rem;
+  width: fit-content;
+  margin-top: 2.125rem;
+}

@@ -1,20 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import useToggle from "../../hooks/use-toggle";
 
-import Drawer from "./Drawer/Drawer";
 import NavigationList from "../NavigationList/NavigationList";
-
 import LoopstudiosLogo from "../../assets/images/logo.svg";
-import Hamburger from "../../assets/images/icon-hamburger.svg";
 
 import styles from "../Header/Header.module.css";
 
 function Header() {
-  const [isMenuOpen, toggleIsMenuOpen] = useToggle(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 375);
-
-  console.log("isMenuOpen", isMenuOpen);
 
   const handleWindowSizeChange = () => {
     setIsMobile(window.innerWidth <= 375);
@@ -37,7 +30,7 @@ function Header() {
         />
         <div className={styles.right}>
           <label className={styles.hamburgerMenu}>
-            <input type="checkbox" onChange={toggleIsMenuOpen} />
+            <input type="checkbox" />
           </label>
           {/* {isMobile ? (
             <>

@@ -6,19 +6,29 @@ function NavigationList() {
   return (
     <ul className={styles.navigationList}>
       <li>
-        <a href="/">About</a>
+        <a className={styles.link} href="/">
+          About
+        </a>
       </li>
       <li>
-        <a href="#Careers">Careers</a>
+        <a className={styles.link} href="#Careers">
+          Careers
+        </a>
       </li>
       <li>
-        <a href="#Events">Events</a>
+        <a className={styles.link} href="#Events">
+          Events
+        </a>
       </li>
       <li>
-        <a href="#Products">Products</a>
+        <a className={styles.link} href="#Products">
+          Products
+        </a>
       </li>
       <li>
-        <a href="#Support">Support</a>
+        <a className={styles.link} href="#Support">
+          Support
+        </a>
       </li>
     </ul>
   );

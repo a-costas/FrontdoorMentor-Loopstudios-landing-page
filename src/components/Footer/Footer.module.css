@@ -1,0 +1,47 @@
+.wrapper {
+  background-color: var(--color-secondary-background);
+  color: var(--color-primary-font);
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  padding: 3.5rem 3.1875rem 3.5rem 3.25rem;
+  align-items: center;
+}
+
+.logoContainer {
+  height: 1.5rem;
+}
+
+.navigationList {
+  margin-top: 2rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+.link {
+  color: var(--color-primary-font);
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.copyright {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-top: 1rem;
+  color: gray;
+}
