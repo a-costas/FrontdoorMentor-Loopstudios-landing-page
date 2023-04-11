@@ -7,10 +7,10 @@ import LoopstudiosLogo from "../../assets/images/logo.svg";
 import styles from "../Header/Header.module.css";
 
 function Header() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 375);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 415);
 
   const handleWindowSizeChange = () => {
-    setIsMobile(window.innerWidth <= 375);
+    setIsMobile(window.innerWidth <= 415);
   };
 
   useEffect(() => {
@@ -32,25 +32,15 @@ function Header() {
           <label className={styles.hamburgerMenu}>
             <input type="checkbox" />
           </label>
-          {/* {isMobile ? (
-            <>
-              {isMenuOpen && (
-                <Drawer
-                  className={styles.drawer}
-                  handleDismiss={toggleIsMenuOpen}
-                >
-                  <NavigationList />
-                </Drawer>
-              )}
-            </>
+          {isMobile ? (
+            <aside className={styles.sidebar}>
+              <nav className={styles.navList}>
+                <NavigationList />
+              </nav>
+            </aside>
           ) : (
             <NavigationList />
-          )} */}
-          <aside className={styles.sidebar}>
-            <nav className={styles.navList}>
-              <NavigationList />
-            </nav>
-          </aside>
+          )}
         </div>
       </div>
       <div className={styles.headingBox}>

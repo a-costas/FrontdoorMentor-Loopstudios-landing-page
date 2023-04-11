@@ -3,7 +3,6 @@
   flex-direction: column;
   margin-top: 6rem;
   padding: 0 1.5rem;
-  align-items: center;
 }
 
 .productList {
@@ -35,4 +34,25 @@ button {
   padding: 0.8125rem 2.6875rem 0.8125rem 2.375rem;
   width: fit-content;
   margin-top: 2.125rem;
+  align-self: center;
+}
+
+@media (min-width: 670px) {
+  .wrapper {
+    padding: 0 10.25rem;
+    /* align-items: left; */
+  }
+
+  .ourCreations {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  .productList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
 }

@@ -25,3 +25,40 @@
   color: gray;
   margin-top: 1rem;
 }
+
+@media (min-width: 670px) {
+  .wrapper {
+    padding: 0 10.25rem;
+    flex-direction: row;
+    position: relative;
+    /* bottom: 0;
+    left: 0; */
+  }
+
+  .mainImage {
+    /* position: relative; */
+    bottom: 0;
+    left: 0;
+  }
+
+  .content {
+    background-color: var(--color-primary-background);
+    position: absolute;
+    /* margin: 0 10.25rem; */
+    padding: 6rem 0 0 6rem;
+    /* padding-bottom: 3px; */
+    bottom: 0;
+    left: 734px;
+    width: 541px;
+    /* height: 317px; */
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0;
+  }
+  .blurb {
+    padding-bottom: 2px;
+  }
+}

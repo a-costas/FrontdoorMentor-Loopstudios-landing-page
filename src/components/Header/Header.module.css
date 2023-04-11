@@ -115,3 +115,33 @@
 .navList {
   margin-top: 50%;
 }
+
+@media (min-width: 670px) {
+  .header {
+    background: url("../../assets/images/desktop/image-hero.jpg") no-repeat;
+    background-size: cover;
+    padding: 4rem 10.3125rem;
+    min-height: 100%;
+  }
+
+  .navigationBar {
+    height: 2rem;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .headingBox {
+    border: 2px solid var(--color-primary-font);
+    padding: 1.625rem 1.5rem 1.5rem;
+    margin-top: 8.125rem;
+    width: 650px;
+  }
+
+  .heading {
+    color: var(--color-primary-font);
+    font-size: 4.5rem;
+    line-height: 4.375rem;
+  }
+}
