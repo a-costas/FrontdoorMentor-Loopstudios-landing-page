@@ -17,7 +17,7 @@ function Products() {
         <Product image="image-curiosity.jpg" name="The Curiosity" />
         <Product image="image-fisheye.jpg" name="Make It Fisheye" />
       </div>
-      <button>See All</button>
+      <button className={styles.seeAllBtn}>See All</button>
     </section>
   );
 }

@@ -48,10 +48,18 @@ function Footer() {
         </div>
       </nav>
       <div className={styles.icons}>
-        <img src={Facebook} href="www.facebook.com" alt="Facebook icon" />
-        <img src={Twitter} href="www.twitter.com" alt="Twitter icon" />
-        <img src={Pinterest} href="www.pinterest.com" alt="Pinterest icon" />
-        <img src={Instagram} href="www.instagram.com" alt="Instagram icon" />
+        <a className={styles.icon} href="http://facebook.com">
+          <img src={Facebook} alt="Facebook icon" />
+        </a>
+        <a className={styles.icon} href="http://twitter.com">
+          <img src={Twitter} alt="Twitter icon" />
+        </a>
+        <a className={styles.icon} href="http://pinterest.com">
+          <img src={Pinterest} alt="Pinterest icon" />
+        </a>
+        <a className={styles.icon} href="http://instagram.com">
+          <img src={Instagram} alt="Instagram icon" />
+        </a>
       </div>
       <p className={styles.copyright}>
         © 2021 Loopstudios. All rights reserved.

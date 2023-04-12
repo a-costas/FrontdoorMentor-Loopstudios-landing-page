@@ -45,3 +45,89 @@
   margin-top: 1rem;
   color: gray;
 }
+
+@media (min-width: 670px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logoContainer icons"
+      "navigationList copyright";
+    gap: 1.5rem;
+  }
+
+  .logoContainer {
+    grid-area: logoContainer;
+  }
+
+  .icons {
+    grid-area: icons;
+    justify-self: right;
+    margin: 0;
+  }
+
+  .navigationList {
+    grid-area: navigationList;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    justify-self: right;
+    margin: 0;
+  }
+
+  .link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -0.5rem;
+    left: 25%;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .icon {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+  }
+
+  .icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -0.5rem;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .icon:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

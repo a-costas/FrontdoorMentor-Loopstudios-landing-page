@@ -30,6 +30,12 @@
 }
 
 @media (min-width: 670px) {
+  .image {
+    position: relative;
+    max-width: 100%;
+    /* height: 100%; */
+  }
+
   .filter {
     background-image: linear-gradient(
       180deg,
@@ -43,5 +49,17 @@
     line-height: 2rem;
     bottom: 2rem;
     left: 2.5rem;
+  }
+
+  .wrapper:hover {
+    cursor: pointer;
+  }
+
+  .wrapper:hover .title {
+    color: black;
+  }
+
+  .wrapper:hover .filter {
+    background: rgba(255, 255, 255, 0.75071);
   }
 }

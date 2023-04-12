@@ -27,5 +27,26 @@
     font-size: 0.9375rem;
     line-height: 1.5625rem;
     text-transform: none;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -0.5rem;
+    left: 25%;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }

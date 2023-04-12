@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 
-button {
+.seeAllBtn {
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -34,25 +34,48 @@ button {
   padding: 0.8125rem 2.6875rem 0.8125rem 2.375rem;
   width: fit-content;
   margin-top: 2.125rem;
+  border: 1px solid black;
   align-self: center;
 }
 
 @media (min-width: 670px) {
   .wrapper {
     padding: 0 10.25rem;
+    margin-top: 11.5rem;
     /* align-items: left; */
+    display: grid;
+    grid-template-areas:
+      "heading heading heading button"
+      "cards cards cards cards"
+      "cards cards cards cards";
   }
 
   .ourCreations {
     font-size: 3rem;
     line-height: 3rem;
     text-align: left;
+    grid-area: heading;
   }
 
   .productList {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1.875rem;
     row-gap: 1.875rem;
+    grid-area: cards;
+  }
+
+  .seeAllBtn {
+    cursor: pointer;
+    grid-area: button;
+    margin: 0;
+    justify-self: right;
+  }
+
+  .seeAllBtn:hover {
+    color: var(--color-primary-font);
+    border: none;
+    background-color: var(--color-secondary-background);
   }
 }
