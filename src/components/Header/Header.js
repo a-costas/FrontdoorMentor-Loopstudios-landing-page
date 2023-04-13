@@ -29,8 +29,8 @@ function Header() {
           className={styles.logo}
         />
         <div className={styles.right}>
-          <label className={styles.hamburgerMenu}>
-            <input type="checkbox" />
+          <label aria-hidden={true} className={styles.hamburgerMenu}>
+            <input aria-label="Toggle hidden menu" type="checkbox" />
           </label>
           {isMobile ? (
             <aside className={styles.sidebar}>

@@ -42,7 +42,6 @@
   .wrapper {
     padding: 0 10.25rem;
     margin-top: 11.5rem;
-    /* align-items: left; */
     display: grid;
     grid-template-areas:
       "heading heading heading button"

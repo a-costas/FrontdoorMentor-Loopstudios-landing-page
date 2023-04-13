@@ -25,7 +25,7 @@ function Product(creation) {
           alt={creation.name}
         />
       </picture>
-      <div className={styles.filter}></div>
+      <div aria-hidden={true} className={styles.filter}></div>
       <h3 className={styles.title}>{creation.name}</h3>
     </div>
   );

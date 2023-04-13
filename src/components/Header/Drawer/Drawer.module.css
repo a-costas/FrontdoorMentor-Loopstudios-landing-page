@@ -35,15 +35,6 @@
   width: auto;
 }
 
-.closeBtn {
-  color: var(--color-primary-font);
-  border: none;
-  background-color: transparent;
-  margin-left: auto;
-  cursor: pointer;
-  padding-right: 0;
-}
-
 .children {
   margin-top: 50%;
 }

@@ -17,7 +17,9 @@ function Products() {
         <Product image="image-curiosity.jpg" name="The Curiosity" />
         <Product image="image-fisheye.jpg" name="Make It Fisheye" />
       </div>
-      <button className={styles.seeAllBtn}>See All</button>
+      <button aria-label="See all products" className={styles.seeAllBtn}>
+        See All
+      </button>
     </section>
   );
 }
