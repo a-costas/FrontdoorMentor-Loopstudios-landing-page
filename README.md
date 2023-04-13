@@ -58,5 +58,3 @@ I want to continue experimenting with animations and ways to make websites more 
 
 - Andrea Y Costas
 - Frontend Mentor - [@a-costas](https://www.frontendmentor.io/profile/a-costas)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
