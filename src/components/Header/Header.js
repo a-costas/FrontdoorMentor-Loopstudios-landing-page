@@ -7,10 +7,10 @@ import LoopstudiosLogo from "../../assets/images/logo.svg";
 import styles from "../Header/Header.module.css";
 
 function Header() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 415);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 670);
 
   const handleWindowSizeChange = () => {
-    setIsMobile(window.innerWidth <= 415);
+    setIsMobile(window.innerWidth <= 670);
   };
 
   useEffect(() => {
