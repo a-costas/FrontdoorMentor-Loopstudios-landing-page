@@ -18,7 +18,7 @@ function Footer() {
         />
       </div>
       <nav className={styles.navList}>
-        <div className={styles.navigationList}>
+        <ul className={styles.navigationList}>
           <li>
             <a className={styles.link} href="/">
               About
@@ -44,7 +44,7 @@ function Footer() {
               Support
             </a>
           </li>
-        </div>
+        </ul>
       </nav>
       <div className={styles.icons}>
         <a className={styles.icon} href="http://facebook.com">
