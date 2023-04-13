@@ -30,7 +30,11 @@ function Header() {
         />
         <div className={styles.right}>
           <label aria-hidden={true} className={styles.hamburgerMenu}>
-            <input aria-label="Toggle hidden menu" type="checkbox" />
+            <input
+              aria-label="Toggle hidden menu"
+              aria-expanded={false}
+              type="checkbox"
+            />
           </label>
           {isMobile ? (
             <aside className={styles.sidebar}>

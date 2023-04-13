@@ -3,9 +3,6 @@ import React from "react";
 import styles from "../Product/Product.module.css";
 
 function Product(creation) {
-  console.log("Image", creation.image);
-  console.log("Name", creation.name);
-  console.log("Img", `../../assets/images/mobile/` + creation.image);
   return (
     <div className={styles.wrapper}>
       <picture className={styles.image}>
