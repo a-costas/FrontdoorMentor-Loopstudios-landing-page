@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/a-costas/FrontdoorMentor-Loopstudios-landing-page)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-loopstudios-created-with-react-and-using-custom-animations-9fAlnvvZx6)
 - Live Site URL: [Loopstudios Live URL](https://64377208d430ab37e9f82b16--steady-biscotti-9ff7fe.netlify.app/)
 
 ## My process
