@@ -28,6 +28,7 @@
 
 @media (min-width: 670px) {
   .wrapper {
+    margin-top: 10rem;
     padding: 0 10.25rem;
     flex-direction: row;
     position: relative;
