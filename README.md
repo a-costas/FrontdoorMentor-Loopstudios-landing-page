@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Loopstudios Live URL](https://64376a4daaaed731a89b72f2--steady-biscotti-9ff7fe.netlify.app/)
+- Solution URL: [Solution URL](https://github.com/a-costas/FrontdoorMentor-Loopstudios-landing-page)
+- Live Site URL: [Loopstudios Live URL](https://64377208d430ab37e9f82b16--steady-biscotti-9ff7fe.netlify.app/)
 
 ## My process
 
